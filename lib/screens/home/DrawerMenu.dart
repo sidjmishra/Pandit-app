@@ -116,6 +116,18 @@ class _MenuPageState extends State<MenuPage> {
               },
             ),
             ListTile(
+              title: Text('Profile'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) {
+                    return ProfilePage();
+                  },
+                  ),
+                );
+              },
+            ),
+            ListTile(
               title: Text('Logout'),
               onTap: ingre,
             ),
